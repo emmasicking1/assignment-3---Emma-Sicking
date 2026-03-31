@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Emma's Bakery & Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Contact</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeButton">Switch Theme</button>
+</header>
+
+<main>
+    <div class="content">
+        <section>
+            <h2>Contact Information</h2>
+            <p>
+                Contact us using the information below or send us a message through the form.
+            </p>
+
+            <ul>
+                <li>Email: emmathebaker@msj.edu</li>
+                <li>Phone: 513-815-1625</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Emma's Bakery & Café</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
