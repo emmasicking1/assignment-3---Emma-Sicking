@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff5f7;
+  color: #222;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffd6de;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+nav {
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7a2c3a;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #ff8fa3;
+  color: white;
+}
+
+#themeButton {
+  background-color: #ff8fa3;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#themeButton:hover {
+  background-color: #e56b85;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border-left: 6px solid #ff8fa3;
+}
+
+img {
+  display: block;
+  margin-top: 12px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #ff8fa3;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #e56b85;
+}
+
+#formMessage {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ffd6de;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #2f1f24;
+  color: #f8e9ee;
+}
+
+.dark-mode header {
+  background-color: #5b3942;
+}
+
+.dark-mode footer {
+  background-color: #5b3942;
+}
+
+.dark-mode section {
+  background-color: #422b32;
+  color: #f8e9ee;
+  border-left: 6px solid #ffb3c1;
+}
+
+.dark-mode nav a {
+  color: #ffdce4;
+}
+
+.dark-mode nav a:hover {
+  background-color: #ff8fa3;
+  color: white;
+}
