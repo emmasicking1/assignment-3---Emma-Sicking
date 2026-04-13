@@ -13,7 +13,11 @@ if (themeButton) {
 }
 
 function changeWelcomeMessage() {
-    welcomeMessage.textContent = "Fresh pastries, warm bread, and cozy café vibes are waiting for you!";
+    if (welcomeMessage.textContent === "Goods for all. I love pastries and fresh baked treats. Stop by today!") {
+        welcomeMessage.textContent = "Fresh pastries, warm bread, and cozy café vibes are waiting for you!";
+    } else {
+        welcomeMessage.textContent = "Goods for all. I love pastries and fresh baked treats. Stop by today!";
+    }
 }
 
 if (welcomeMessage) {
@@ -23,27 +27,16 @@ if (welcomeMessage) {
 function validateForm(event) {
     event.preventDefault();
 
-    const nameInput = document.getElementById("name");
-    const emailInput = document.getElementById("email");
-    const messageInput = document.getElementById("message");
-
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
     if (name === "" || email === "" || message === "") {
         formMessage.textContent = "Please fill out all fields.";
-        formMessage.style.color = "red";
     } else if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
-        formMessage.textContent = "Please enter a valid email address.";
-        formMessage.style.color = "red";
+        formMessage.textContent = "Enter a valid email.";
     } else {
-        formMessage.textContent = "Message submitted successfully!";
-        formMessage.style.color = "green";
-
-        nameInput.value = "";
-        emailInput.value = "";
-        messageInput.value = "";
+        formMessage.textContent = "Message submitted!";
     }
 }
 
